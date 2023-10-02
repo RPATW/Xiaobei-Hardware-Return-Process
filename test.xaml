@@ -1,0 +1,389 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="test" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1365,2056" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="642,1991" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="580,1880" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="518,1769" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\rpa\小北核帳輸出\暫存.xlsx">
+        <ueab:ExcelApplicationCard.Body>
+          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+            </ActivityAction.Argument>
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="捷盟下載提取及篩選" sap:VirtualizedContainerService.HintSize="484,1500" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\rpa\小北核帳輸出\暫存.xlsx">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1390" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="ui:UiElement" Name="ExcelWindow" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'excel.exe EXPORT.XLSX'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                      <ui:WaitUiElementAppear.FoundElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">
+                            <CSharpReference.Result>
+                              <OutArgument x:TypeArguments="Location(ui:UiElement)" />
+                            </CSharpReference.Result>ExcelWindow</CSharpReference>
+                        </OutArgument>
+                      </ui:WaitUiElementAppear.FoundElement>
+                      <ui:WaitUiElementAppear.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cf44c153-1607-441a-b0c5-20d10c0e6ad0" InformativeScreenshot="029fb8f64a7787239e3eaa7c1c6306a8" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:WaitUiElementAppear.Target>
+                    </ui:WaitUiElementAppear>
+                    <ui:MaximizeWindow DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1">
+                      <ui:MaximizeWindow.Window>
+                        <InArgument x:TypeArguments="ui:Window">
+                          <CSharpValue x:TypeArguments="ui:Window" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">
+                            <CSharpValue.Result>
+                              <OutArgument x:TypeArguments="ui:Window" />
+                            </CSharpValue.Result>ExcelWindow</CSharpValue>
+                        </InArgument>
+                      </ui:MaximizeWindow.Window>
+                    </ui:MaximizeWindow>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click '索引標籤項目  常用'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d4744f90-5da9-4592-90e4-dd7da0670b29" InformativeScreenshot="19324a510defb8cec671ce20728078b9" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;&lt;uia cls='MsoCommandBar' helpText='Ribbon工具列' /&gt;&lt;uia cls='NetUIPanViewer' name='功能區索引標籤' /&gt;&lt;uia automationid='TabHome' cls='NetUIRibbonTab' name='常用' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click '索引標籤項目  常用'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d4744f90-5da9-4592-90e4-dd7da0670b29" InformativeScreenshot="ab64ad1a02e1c75249bc721303bb9bf2" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;&lt;uia cls='MsoCommandBar' helpText='Ribbon工具列' /&gt;&lt;uia cls='NetUIPanViewer' name='功能區索引標籤' /&gt;&lt;uia automationid='TabData' cls='NetUIRibbonTab' name='資料' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click '索引標籤項目  常用'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d4744f90-5da9-4592-90e4-dd7da0670b29" InformativeScreenshot="e204c0369e84ecb8eb6d2f9f9fe21c6c" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='*' /&gt;&lt;uia cls='MsoCommandBar' helpText='Ribbon工具列' /&gt;&lt;uia cls='NetUIOrderedGroup' name='資料' /&gt;&lt;uia cls='NetUIChunk' name='取得及轉換資料' /&gt;&lt;uia automationid='GetPowerQueryGetTransformDataFromText' cls='NetUIRibbonButton' name='從文字/CSV' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'ModernSearchBox'" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,155" sap2010:WorkflowViewState.IdRef="TypeInto_1">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9f9047b-734c-4164-b27b-0ce529704871" InformativeScreenshot="b7be5563fad791aabb2b8f94904b9ff1" Selector="&lt;wnd app='excel.exe' cls='#32770' title='匯入資料' /&gt;&lt;wnd cls='ToolbarWindow32' title='上頻帶' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                      <ui:TypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">"[k(tab)]"+"[k(del)]"+"ccabc"+ "[k(enter)]"</CSharpValue>
+                        </InArgument>
+                      </ui:TypeInto.Text>
+                    </ui:TypeInto>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '位址: 文件'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                            <uix:NClick.InScope>
+                              <InArgument x:TypeArguments="x:Object">
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">Excel</CSharpValue>
+                              </InArgument>
+                            </uix:NClick.InScope>
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable CvElementArea="151, 48, 344, 36" CvTextArea="198, 59, 25, 13" CvTextArgument="X#" CvType="InputBox" DesignTimeRectangle="152, 41, 259, 34" DesignTimeScaleFactor="1" ElementType="Toolbar" FriendlyName="'位址: 文件'" FullSelectorArgument="&lt;wnd aaname='正在載入' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='*' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='正在載入' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='*' check:text='位址: 文件' /&gt;" Guid="105de302-da79-4049-9931-fec22c0ed844" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAmCAYAAADJLF6AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR6SURBVHhe7dtZTxtXGAZg/wLuueAXcMkv4G9wxW2hLTRKQwsoaUIjiMO+GgLBmMWEfTGLWWwIUMA2i6FEdas0adSoqoSaBhoIycXbOcfHleOeMRRMVOB9pE+jGXGkuZl3vvN5sICISIPhQERallAoBBaLxYotdg5EpMVwICIthgMRaTEciEiL4UBEWgwHItJiOBCRlmk4/PLbK6z/+BJrP/yKgFG+Jy+wsvMCS1vPsRB8hrnN5/Cs/4zpwFNsP/tdrSKiy8I0HDxrP2F0cQcjRg3Mf49e7zacM0G0uzfQOr6OZlcAtmEf6gZXYZ/cUKuI6LIwDYfRxScyGAYfG8Hg2UL3bBAdU5uwT6yjZSyAxhE/6oZ8qOpfRnnPd2oVEV0WccNhaGEHfUbHIIKhc3oTbUaH0DK2hiYjGOqNYKjuX0FF7zKszgW16uPY3d1FWlqaPBLR+TANh2EZDFvYe3OorgB7fx0aweDD23fv5bk43ncuorhjTp5/TCIY8vPz1ZnewcEBCgoK5NFmsyEYDMo1DBWi45mGw8D8Nnpmt9DY50V11xTK2ydR0TWD+sFV9RdhxQ4v7jo86ux8iIc6KSkJFovl2CorK1OrAJfLJUuEQUZGhgwJhgPRyZiGQ6/RNTiNrUR05/Da6Bxqja3E4dsjeX5gHItap3HHqJPw+XxYWlpSZ4nj8XhkgEQTARDZeojA0AVJcnLyiYPivO6d6P/KNBzkANK9gRrnDMocE7hnH4e1zS3nDEUt4yisH5RVZJ/BrQeTalV8drsdWVlZcLvd6sp/E90BRERvHaLl5OQgNzcXDofjg27itJ3DWe+d6KIxDQc5gJxY/6BziPVq7wC3mt0otI2pK/EdHR2hsrLyTA9ZZKsQEXsuiC5CzBhEMMQGwWnDIRH3TnSRmIZDuzv8s6WYM5QYXcPdljHcbhrFzYYh5Nf0I6+yBzeMKmwcx9f1o2rV8fb39+UbPTs7+19v+5MSXYEIAF0nEU2Eg9frjTuviA2WeBJx70QXhWk4iK6hxRXAn/vmD8Efr9/IYPiyelBdiS9Rb1/xYKanp8uHPnbWEI2dA9HpmYaD+J5BfOhkdbhR1OzCN40jcsbwVVUvrpc7ce1+J3KtHbhRM4RrFX1qVXyJ2reLQEhJSUFqamrcN38iw4EzB7pqTMOhadSPhiEfagZWUNm3gtLuRZR0zuNb+6ycMxTYxpBXO4zrVQPIKe1Rq+Lz+/1nmviLh1r8wiC6hkhbn5mZadpBJDIcznrvRBeNaTjYhv2oHVhFlQiGR0vhYGibxe2HU+E5Q92I3E58Ud6LT61Otep8RELB7KfHyDYjdoaQyHAgumpMw0H8Q1Xk8+h7XY9R3D6HOw+ncfPBxD9zBhEMn1m78Ulxh1pFRJeFaTjMBJ6ivCf8fxPF7V4UtYa/Z8hvcCFPzRk+L32E7JJOOFzLahURXRam4UBEVxvDgYi0GA5EpMVwICIthgMRaTEciEiL4UBEWgwHItJiOBCRliUUCoHFYrFii50DEWkxHIhIA/gbAfE8Git25hYAAAAASUVORK5CYII=" InformativeScreenshot="316fb63bde24ecc55e11f891b54495fc.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='#32770' title='匯入資料' /&gt;" SearchSteps="Selector, Image, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'ToolbarWindow32'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81543581-c877-4957-bf16-5dbc5cb1ae81" InformativeScreenshot="4e9a2a1bb6c322cef289da08ab367d61" Selector="&lt;wnd app='excel.exe' cls='#32770' title='匯入資料' /&gt;&lt;wnd aaname='正在載入' cls='msctls_progress32' /&gt;&lt;wnd cls='ToolbarWindow32' title='網址列' /&gt;&lt;ctrl name='網址列' role='tool bar' /&gt;&lt;ctrl name='先前的位置' role='push button' /&gt;&lt;nav up='3' /&gt;&lt;wnd ctrlid='1001' title='*' /&gt;" WaitForReady="COMPLETE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:Click.Target>
+                          </ui:Click>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,329" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '位址: 文件'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="Excel" Version="V3">
+                            <uix:NTypeInto.InScope>
+                              <InArgument x:TypeArguments="x:Object">
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Excel</CSharpValue>
+                              </InArgument>
+                            </uix:NTypeInto.InScope>
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="152, 41, 259, 34" DesignTimeScaleFactor="1" ElementType="Toolbar" FriendlyName="'位址: 文件'" FullSelectorArgument="&lt;wnd aaname='正在載入' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='*' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='正在載入' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='*' check:text='位址: 文件' /&gt;" Guid="d9f4e292-5695-43dc-b6bd-15a0b1afb27a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAmCAYAAADJLF6AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARdSURBVHhe7dvLTltHHMdxPwF7FjwBS56A12DFttAWGqWhBZQ0oRHE4X41BIKxARObO+ZiLjYEKGAbg6FEdas0adSoqoSaBhoI7eLXM+Nx5bhzDIWQBf19pJF1LGZ5vv6fsbGAiEiDcSAiLUssFgMXFxdX6uLkQERajAMRaTEORKTFOBCRFuNARFqMAxFpMQ5EpGUah59+eYXI9y+x+d3PCBsr+OQF1vdeYHXnOZajz7C4/Rz+yI+YCz/F7rNf1S4iuipM4+Df/AETK3sYN9bw0rfwBHbhmo/C6dtC91QEnd4wbGNBtIxswD6zpXYR0VVhGoeJlScyDCOPjTD4dzCwEEXv7Dbs0xF0TYbRPh5Cy2gQDUNrqHV/o3YR0VWRNg6jy3sYNCYGEYa+uW30GBNC1+QmOowwtBphaBxaR51nDVbXstr1Yezv7yMnJ0e+EtHlMI3DmAzDDg7eHKt3gIM/jo0wBPH2z7/ktXi971pBZe+ivP6QRBhKS0vVld7R0RHKysrkq81mQzQalXsYFaLTmcZheGkX7oUdtA8G0Ng/i1rnDOr659E6sqH+Iq7SEcBdh19dXQ5xU2dkZMBisZy6ampq1C7A6/XKJWKQl5cnI8E4EJ2NaRw8xtTgMh4lkieH18bk0Gw8Shy/PZHXR8ZrRfcc7hjrLILBIFZXV9XV++P3+2VAkokAJB49RDB0IcnMzGQoiEyYxkEeQPq20OSaR41jGvfsU7D2+OQ5Q0XXFMpbR+SqsM/j1oMZtSs9u92OgoIC+Hw+9c5/kzwBJCQ/OiQrKipCcXExHA7HO9MEJweiszGNgzyAnI68MzmkenVwhFudPpTbJtU76Z2cnKC+vv5CgUg8KiSkXgtiihBnDCIMqSFgHIjOxjQOTl/8a0txzlBlTA13uyZxu2MCN9tGUdo0hJJ6N24Yq7x9Cl+2Tqhdpzs8PJSf6IWFhf/6tD8rMRWIAOgmiWQiDoFAIO15RWpYiCjONA5iaujyhvH7ofkN/NvrNzIMnzeOqHfSex+TgyBikJubK2/61LOGZJwciM7PNA7i9wzih05Whw8VnV581T4uzxi+aPDgeq0L1+73odjaixtNo7hWN6h2pXfRM4cEEYSsrCxkZ2en/eRnHIjOzzQOHRMhtI0G0TS8jvrBdVQPrKCqbwlf2xfkOUOZbRIlzWO43jCMomq32pVeKBS60LcV4qYW3zCIqSHxKJGfn286QTAOROdnGgfbWAjNwxtoEGF4tBoPQ88Cbj+cjZ8ztIzLx4nPaj342OpSuy5HIgpmXz0mHjNSzxAYB6LzM42D+IeqxM+j7/U/RqVzEXcezuHmg+l/zhlEGD6xDuCjyl61i4iuCtM4zIefotYd/7+JSmcAFd3x3zOUtnlRos4ZPq1+hMKqPji8a2oXEV0VpnEgov83xoGItBgHItJiHIhIi3EgIi3GgYi0GAci0mIciEiLcSAiLUssFgMXFxdX6uLkQERajAMRaQB/A8dYUZV4Rs0PAAAAAElFTkSuQmCC" InformativeScreenshot="18ef430a325eebb134203fa802e8bbd0.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='#32770' title='匯入資料' /&gt;" SearchSteps="Selector, Image" SelectionStrategy="AA" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="411, 41, 37, 37" ElementType="Button" FriendlyName="'先前的位置'" FullSelectorArgument="&lt;ctrl name='正在載入' role='progress bar' /&gt;&lt;ctrl name='網址列' role='tool bar' /&gt;&lt;ctrl name='先前的位置' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='正在載入' role='progress bar' /&gt;&lt;ctrl name='網址列' role='tool bar' /&gt;&lt;ctrl name='先前的位置' role='push button' automationid='' check:text='先前的位置' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACLSURBVFhH7dhLCoAwDEVRF55Ou8dOu5FIwKJCR3qFBt+Fgp/JwbQTN09QDmRrzVdfGjeVkFRCUglJJSSVkFRCUv0DWWv13vtxdxbP4h3Ra2RgzOwGjetSyhT/JGTcVygNjLA9OaA0MEIPzviSdCjyq4SkEpJKSCohqYSkyoGc/bRcbWncVEJSJUC67/DI9eszPqfTAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.Text>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"[k(del)]"+小北核帳下載路徑+ "[k(enter)]"</CSharpValue>
+                              </InArgument>
+                            </uix:NTypeInto.Text>
+                          </uix:NTypeInto>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'ToolbarWindow32'" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,155" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0e6ea1ef-a0b2-4ada-b9e4-833cd676cb9e" InformativeScreenshot="4c3e3c86b76f66a69d28a3d0f8dc15d5" Selector="&lt;wnd app='excel.exe' cls='#32770' title='匯入資料' /&gt;&lt;wnd ctrlid='1090' title='檔案名稱(&amp;amp;N):' /&gt;&lt;nav up='1' /&gt;&lt;wnd aaname='檔案名稱(N):' idx='2' /&gt;&lt;wnd aaname='檔案名稱(N):' idx='1' /&gt;&lt;wnd aaname='檔案名稱(N):' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                      <ui:TypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">"退貨LGC08472M-"+"ccabc"+".csv[k(enter)]"</CSharpValue>
+                        </InArgument>
+                      </ui:TypeInto.Text>
+                    </ui:TypeInto>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ExcelApplicationScope>
+          </ActivityAction>
+        </ueab:ExcelApplicationCard.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ueab:ExcelApplicationCard>
+    </ueab:SequenceX>
+  </Sequence>
+</Activity>
